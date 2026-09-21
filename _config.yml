@@ -1,0 +1,11 @@
+title: Project Retrospectives
+description: Notes to self on what worked, what didn't, and what I'd do differently.
+theme: minima
+minima:
+  skin: dark
+
+show_excerpts: true
+permalink: /:year/:month/:day/:title/
+
+plugins:
+  - jekyll-feed
