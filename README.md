@@ -33,9 +33,7 @@ Then open http://localhost:4000.
 
 ## One-time setup after the repo exists on GitHub
 
-1. **Enable Pages**: Settings → Pages → Source: Deploy from branch → `main` / `/ (root)`.
-2. **Enable Discussions**: Settings → General → Features → check "Discussions".
-3. **Install giscus**: go to [giscus.app](https://giscus.app), enter this repo, pick the "General"
-   discussion category, and copy the `data-repo-id` and `data-category-id` values it generates
-   into `_includes/comments.html` (replacing the `REPLACE_*` placeholders), along with the
-   `data-repo` value (`owner/repo`).
+Pages, Discussions, and the giscus repo/category IDs in `_includes/comments.html` are already
+configured. The one remaining step: install the [giscus GitHub App](https://github.com/apps/giscus)
+on this repo (needs a browser + your GitHub login) so it's authorized to post comments as
+Discussions. Without it, the comment widget loads but can't submit anything.
